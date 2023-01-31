@@ -7,6 +7,7 @@ body .container {
   margin-top: 200px;
 }
 body .container .block {
+  margin-top: 13px;
   width: 1200px;
   height: 87px;
   display: flex;
@@ -15,17 +16,34 @@ body .container .block {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border: none;
-  background: linear-gradient(90deg, #B1E3FF 0%, #DFBEFF 100%);
 }
 body .container .block:focus {
+  transition-duration: 2s;
+  margin-top: 100px;
+  margin-bottom: 190px;
+}
+body .container .block:focus::before {
   opacity: 1;
   transition-duration: 2s;
 }
 body .container .block:focus .wrapper {
-  display: block;
+  opacity: 1;
+  transition-duration: 2s;
 }
 body .container .block:focus .minus {
   display: none;
+}
+body .container .block::before {
+  content: "";
+  position: absolute;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 1200px;
+  margin-left: -0.1%;
+  height: 87px;
+  background: linear-gradient(90deg, #B2E3FF 0%, #DFBFFF 100%);
+  opacity: 0.2;
+  transition-duration: 1s;
 }
 body .container .block .instruction {
   font-family: "Comfortaa";
@@ -36,6 +54,20 @@ body .container .block .instruction {
   color: #46637E;
   margin-left: -900px;
   position: absolute;
+}
+body .container .block .wrapper {
+  width: 1100px;
+  height: 200px;
+  opacity: 0;
+  margin-top: 30%;
+}
+body .container .block .wrapper p {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #878787;
 }
 body .container .block svg {
   width: 40px;
@@ -52,19 +84,4 @@ body .container .block .plus:focus .wrapper {
 body .container .block .minus {
   margin-top: 1px;
   margin-left: 1131px;
-}
-body .container .block .wrapper {
-  width: 1100px;
-  height: 200px;
-  display: none;
-  margin-left: 5%;
-  margin-top: 30%;
-}
-body .container .block .wrapper p {
-  font-family: "Comfortaa";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
-  color: #878787;
 }/*# sourceMappingURL=style.css.map */

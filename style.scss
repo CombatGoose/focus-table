@@ -5,11 +5,18 @@ body {
     .container {
         margin-top: 200px;
         .block {
-            &:focus {         
-                opacity: 1;
+            margin-top: 13px;
+            &:focus {        
                 transition-duration: 2s;
+                margin-top: 100px;
+                margin-bottom: 190px; 
+                &::before {
+                    opacity: 1;
+                    transition-duration: 2s;
+                }
            .wrapper {
-            display: block;
+            opacity: 1;
+            transition-duration: 2s;
            }
            .minus {
             display: none;
@@ -24,7 +31,18 @@ body {
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             border: none;
-            background: linear-gradient(90deg, #B1E3FF 0%, #DFBEFF 100%);
+            &::before {
+                content: "";
+                position: absolute;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+               width: 1200px;
+               margin-left: -0.1%;
+               height: 87px;       
+                background: linear-gradient(90deg, #B2E3FF 0%, #DFBFFF 100%);
+                opacity: 0.2;
+                transition-duration: 1s;
+            }
             .instruction {
                 font-family: 'Comfortaa';
                 font-style: normal;
@@ -34,6 +52,20 @@ body {
                 color: #46637E;
                 margin-left: -900px;
                 position: absolute;
+            }
+            .wrapper {
+                width: 1100px;
+                height: 200px;
+             opacity: 0;
+                margin-top: 30%;
+                p {
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #878787;
+                }
             }
             svg {
                 width: 40px;
@@ -52,21 +84,6 @@ body {
             .minus {
                 margin-top: 1px;
                 margin-left: 1131px;
-            }
-            .wrapper {
-                width: 1100px;
-                height: 200px;
-                display: none;
-                margin-left: 5%;
-                margin-top: 30%;
-                p {
-                    font-family: 'Comfortaa';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 150%;
-                    color: #878787;
-                }
             }
         }
     }
