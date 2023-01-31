@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="plus" width="36" height="4" viewBox="0 0 36 4">
+<path d="M2 2H34" stroke="#787878" stroke-width="3" stroke-linecap="round"/>
+</symbol>
+<symbol id="minus" width="4" height="35" viewBox="0 0 4 35">
+<path d="M2.14453 2L2.14453 33" stroke="#787878" stroke-width="3" stroke-linecap="round"/>
+</symbol>
+</svg>

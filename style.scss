@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        margin-top: 200px;
+        .block {
+            &:focus {         
+                opacity: 1;
+                transition-duration: 2s;
+           .wrapper {
+            display: block;
+           }
+           .minus {
+            display: none;
+           }
+           
+            }
+            width: 1200px;
+            height: 87px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border: none;
+            background: linear-gradient(90deg, #B1E3FF 0%, #DFBEFF 100%);
+            .instruction {
+                font-family: 'Comfortaa';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 33px;
+                color: #46637E;
+                margin-left: -900px;
+                position: absolute;
+            }
+            svg {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+            }
+            .plus {
+                margin-top: 35px;
+                margin-left: 1100px;
+                &:focus {
+                    .wrapper {
+                        display: none;
+                    }
+                }
+            }
+            .minus {
+                margin-top: 1px;
+                margin-left: 1131px;
+            }
+            .wrapper {
+                width: 1100px;
+                height: 200px;
+                display: none;
+                margin-left: 5%;
+                margin-top: 30%;
+                p {
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #878787;
+                }
+            }
+        }
+    }
+}
